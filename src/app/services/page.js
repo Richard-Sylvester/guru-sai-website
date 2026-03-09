@@ -40,11 +40,26 @@ export default function Services() {
       
       {/* Header Banner */}
       <section className="w-full bg-slate-900 py-20 text-center">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight">Our Services</h1>
-        <p className="text-slate-400 mt-4 text-lg max-w-2xl mx-auto px-4">
+        
+        {/* Step 1: Headline (Fades in immediately) */}
+        <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight animate-fade-in-up">
+          Our Services
+        </h1>
+        
+        {/* Step 2: Subtitle (Waits 0.3 seconds) */}
+        <p 
+          className="text-slate-400 mt-4 text-lg max-w-2xl mx-auto px-4 animate-fade-in-up" 
+          style={{ animationDelay: '0.3s' }}
+        >
             Delivering 100% Top Quality turnkey infrastructure solutions across the B2B sector.
         </p>
-        <div className="w-16 h-1 bg-amber-500 mx-auto mt-6"></div>
+        
+        {/* Step 3: Amber Underline (Waits 0.6 seconds) */}
+        <div 
+          className="w-16 h-1 bg-amber-500 mx-auto mt-6 animate-fade-in-up" 
+          style={{ animationDelay: '0.6s' }}
+        ></div>
+        
       </section>
 
       {/* Services Grid Section */}

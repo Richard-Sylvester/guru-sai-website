@@ -2,9 +2,14 @@ export default function About() {
   return (
     <main className="flex flex-col w-full bg-white">
       {/* Header Banner */}
-      <section className="w-full bg-slate-900 py-20 text-center">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight">About Us</h1>
-        <div className="w-16 h-1 bg-amber-500 mx-auto mt-6"></div>
+      <section className="w-full bg-slate-900 py-24 text-center">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight animate-fade-in-up">
+          About Us
+        </h1>
+        <div 
+          className="w-16 h-1 bg-amber-500 mx-auto mt-6 animate-fade-in-up" 
+          style={{ animationDelay: '0.3s' }}
+        ></div>
       </section>
 
       {/* Content Section */}

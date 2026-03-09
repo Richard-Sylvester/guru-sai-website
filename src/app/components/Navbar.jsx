@@ -6,10 +6,27 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
           
-          {/* Logo Text */}
+          {/* UPDATED: Brand Logo & Name */}
           <div className="flex-shrink-0 flex items-center">
-            <Link href="/" className="text-2xl font-extrabold text-slate-900 tracking-tight">
-              GURU SAI <span className="text-slate-500 font-medium text-lg ml-1">CONSTRUCTIONS & DEVELOPERS</span>
+            <Link href="/" className="flex items-center gap-3 group">
+              
+              {/* The Logo Image - Make sure the file name exactly matches what's in your public folder! */}
+              <img 
+                src="/logos/gurusai-logo.png" 
+                alt="Guru Sai Logo" 
+                className="h-10 w-auto md:h-12 transition-transform duration-300 group-hover:scale-105" 
+              />
+              
+              {/* The Company Name Stacked */}
+              <div className="flex flex-col">
+                <span className="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight leading-none">
+                  GURU SAI
+                </span>
+                <span className="text-xs font-bold text-slate-500 tracking-widest uppercase mt-1">
+                  Constructions & Developers
+                </span>
+              </div>
+              
             </Link>
           </div>
 

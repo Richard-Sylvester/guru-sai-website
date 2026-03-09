@@ -8,14 +8,11 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   
-  // This tells us exactly which page the user is currently on
   const pathname = usePathname();
   const isHome = pathname === '/';
 
-  // This watches the user's scroll position
   useEffect(() => {
     const handleScroll = () => {
-      // If they scroll down more than 20px, trigger the shrink effect
       if (window.scrollY > 20) {
         setIsScrolled(true);
       } else {
@@ -24,13 +21,11 @@ export default function Navbar() {
     };
 
     window.addEventListener('scroll', handleScroll);
-    // Call it once on load just in case they refresh while halfway down the page
     handleScroll(); 
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Pro-Tip: If the mobile menu is open, we force the navbar to be solid so it's readable
   const showSolidNav = !isHome || isScrolled || isOpen;
 
   return (
@@ -40,12 +35,10 @@ export default function Navbar() {
       } ${
         showSolidNav 
           ? 'bg-white border-b border-slate-200 shadow-sm' 
-          : 'bg-transparent border-transparent pt-4' // Added pt-4 to push it down slightly when massive
+          : 'bg-transparent border-transparent pt-4'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* The Container Height - Dynamically Shrinks */}
         <div className={`flex justify-between items-center transition-all duration-500 ${
           showSolidNav ? 'h-20' : 'h-28 md:h-32'
         }`}>
@@ -54,34 +47,39 @@ export default function Navbar() {
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center gap-3 group" onClick={() => setIsOpen(false)}>
               
-              {/* The Logo Image - Dynamically Shrinks */}
               <img 
                 src="/logos/gurusai-logo.png" 
                 alt="Guru Sai Logo" 
                 className={`w-auto transition-all duration-500 group-hover:scale-105 ${
-                  showSolidNav ? 'h-10 md:h-12' : 'h-14 md:h-16'
+                  showSolidNav 
+                    ? 'h-10 md:h-12' 
+                    : 'h-14 md:h-16 brightness-0 invert drop-shadow-md'
                 }`} 
               />
               
               <div className="flex flex-col">
+                {/* UPGRADED: Text swaps to white when transparent */}
                 <span className={`font-extrabold tracking-tight leading-none transition-all duration-500 ${
-                  showSolidNav ? 'text-xl md:text-2xl text-slate-900' : 'text-2xl md:text-3xl text-slate-900'
+                  showSolidNav ? 'text-xl md:text-2xl text-slate-900' : 'text-2xl md:text-3xl text-white drop-shadow-md'
                 }`}>
                   GURU SAI
                 </span>
-                <span className="text-xs font-bold text-slate-500 tracking-widest uppercase mt-1">
+                {/* UPGRADED: Subtitle gets lighter when transparent */}
+                <span className={`text-xs font-bold tracking-widest uppercase mt-1 transition-colors duration-500 ${
+                  showSolidNav ? 'text-slate-500' : 'text-slate-300 drop-shadow-md'
+                }`}>
                   Constructions & Developers
                 </span>
               </div>
             </Link>
           </div>
 
-          {/* Desktop Center Links */}
+          {/* Desktop Center Links - UPGRADED: Swaps to white when transparent */}
           <div className="hidden md:flex space-x-8">
-            <Link href="/" className="text-slate-800 hover:text-amber-600 font-bold transition-colors">Home</Link>
-            <Link href="/about" className="text-slate-800 hover:text-amber-600 font-bold transition-colors">About Us</Link>
-            <Link href="/services" className="text-slate-800 hover:text-amber-600 font-bold transition-colors">Services</Link>
-            <Link href="/projects" className="text-slate-800 hover:text-amber-600 font-bold transition-colors">Projects</Link>
+            <Link href="/" className={`font-bold transition-colors ${showSolidNav ? 'text-slate-800 hover:text-amber-600' : 'text-white hover:text-amber-400 drop-shadow-md'}`}>Home</Link>
+            <Link href="/about" className={`font-bold transition-colors ${showSolidNav ? 'text-slate-800 hover:text-amber-600' : 'text-white hover:text-amber-400 drop-shadow-md'}`}>About Us</Link>
+            <Link href="/services" className={`font-bold transition-colors ${showSolidNav ? 'text-slate-800 hover:text-amber-600' : 'text-white hover:text-amber-400 drop-shadow-md'}`}>Services</Link>
+            <Link href="/projects" className={`font-bold transition-colors ${showSolidNav ? 'text-slate-800 hover:text-amber-600' : 'text-white hover:text-amber-400 drop-shadow-md'}`}>Projects</Link>
           </div>
 
           {/* Desktop Contact Button */}
@@ -91,11 +89,13 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Mobile Hamburger Button */}
+          {/* Mobile Hamburger Button - UPGRADED: Swaps to white when transparent */}
           <div className="md:hidden flex items-center">
             <button 
               onClick={() => setIsOpen(!isOpen)} 
-              className="text-slate-900 hover:text-amber-500 focus:outline-none p-2"
+              className={`hover:text-amber-500 focus:outline-none p-2 transition-colors duration-300 ${
+                showSolidNav ? 'text-slate-900' : 'text-white drop-shadow-md'
+              }`}
               aria-label="Toggle menu"
             >
               {isOpen ? (
@@ -103,7 +103,7 @@ export default function Navbar() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
               ) : (
-                <svg className="w-8 h-8 drop-shadow-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
               )}
@@ -113,7 +113,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Dropdown Menu */}
+      {/* Mobile Dropdown Menu (Stays the same!) */}
       {isOpen && (
         <div className="md:hidden bg-white border-t border-slate-100 absolute w-full left-0 shadow-xl pb-6 px-4 pt-2">
           <div className="flex flex-col space-y-1">

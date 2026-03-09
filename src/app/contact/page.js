@@ -1,4 +1,4 @@
-"use client"; // This tells Next.js this is an interactive component
+"use client"; 
 
 import { useState } from "react";
 
@@ -26,9 +26,8 @@ export default function Contact() {
       if (data.success) {
         setButtonText("SENT SUCCESSFULLY ✓");
         setFormStatus("Thank you! We will get back to you shortly.");
-        event.target.reset(); // Clears the form fields
+        event.target.reset(); 
         
-        // Reset button text after 3 seconds
         setTimeout(() => {
           setButtonText("REQUEST A CALL BACK");
           setFormStatus("");
@@ -47,102 +46,125 @@ export default function Contact() {
     <main className="flex flex-col w-full bg-slate-50 min-h-screen">
       
       {/* Header Banner */}
-      <section className="w-full bg-slate-900 py-20 text-center">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight">Contact Us</h1>
-        <div className="w-16 h-1 bg-amber-500 mx-auto mt-6"></div>
+      <section className="w-full bg-slate-900 pt-12 pb-12 text-center">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight animate-fade-in-up">Contact Us</h1>
+        <div className="w-16 h-1 bg-amber-500 mx-auto mt-6 animate-fade-in-up" style={{ animationDelay: '0.3s' }}></div>
       </section>
 
-      {/* Content Section */}
-      <section className="max-w-7xl mx-auto px-4 py-16 md:py-24 w-full">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+      {/* Content Section - The New Unified Split-Card */}
+      <section className="max-w-6xl mx-auto px-4 py-16 w-full mt-12 z-10">
+        <div className="bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col lg:flex-row border border-slate-100">
           
-          {/* Column 1: Corporate Office Details */}
-          <div className="bg-white p-8 md:p-12 rounded-lg shadow-sm border border-slate-200 flex flex-col">
-            <h2 className="text-2xl font-bold text-slate-900 mb-8 border-b pb-4">Corporate Office Details</h2>
+          {/* Left Column: Dark Corporate Info Panel */}
+          <div className="w-full lg:w-2/5 bg-slate-200 text-white p-10 md:p-14 flex flex-col justify-between relative overflow-hidden">
             
-            <div className="space-y-6 text-lg text-slate-700 flex-grow">
-              <div className="flex items-start">
-                <span className="text-2xl mr-4">📍</span>
-                <div>
-                  <p className="font-bold text-slate-900">Headquarters</p>
-                  <p>Benson Town</p>
-                  <p>Bangalore - 560046</p>
-                </div>
-              </div>
+            {/* Subtle background decoration */}
+            <div className="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-slate-800 rounded-full opacity-50"></div>
+            <div className="absolute bottom-0 left-0 -mb-10 -ml-10 w-40 h-40 bg-amber-500 rounded-full opacity-10"></div>
 
-              <div className="flex items-center">
-                <span className="text-2xl mr-4">📞</span>
-                <div>
-                  <p className="font-bold text-slate-900">Phone</p>
-                  <p>+91-9008342182 / +91-9964847399</p>
+            <div className="relative z-10">
+              <h2 className="text-3xl text-slate-900 font-bold mb-2">Get in touch</h2>
+              <p className="text-slate-800 mb-10 leading-relaxed">
+                We are ready to partner on your next major infrastructure project. Reach out to our corporate team today.
+              </p>
+              
+              <div className="space-y-8 text-lg">
+                <div className="flex items-start group">
+                  <span className="text-amber-500 text-2xl mr-4 mt-1 bg-slate-800 p-3 rounded-lg group-hover:bg-amber-500 group-hover:text-slate-900 transition-colors">📍</span>
+                  <div>
+                    <p className="font-bold text-slate-900 mb-1">Corporate Headquarters</p>
+                    <p className="text-slate-800 text-base leading-relaxed">
+                      Benson Town<br />
+                      Bangalore - 560046
+                    </p>
+                  </div>
                 </div>
-              </div>
 
-              <div className="flex items-center">
-                <span className="text-2xl mr-4">✉️</span>
-                <div>
-                  <p className="font-bold text-slate-900">Email</p>
-                  <p>gurusaidevelopers97@gmail.com</p>
+                <div className="flex items-start group">
+                  <span className="text-amber-500 text-2xl mr-4 mt-1 bg-slate-800 p-3 rounded-lg group-hover:bg-amber-500 group-hover:text-slate-900 transition-colors">📞</span>
+                  <div>
+                    <p className="font-bold text-slate-900 mb-1">Direct Lines</p>
+                    <p className="text-slate-800 text-base">+91-9008342182</p>
+                    <p className="text-slate-800 text-base">+91-9964847399</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start group">
+                  <span className="text-amber-800 text-2xl mr-4 mt-1 bg-slate-800 p-3 rounded-lg group-hover:bg-amber-500 group-hover:text-slate-900 transition-colors">✉️</span>
+                  <div>
+                    <p className="font-bold text-slate-900 mb-1">Email</p>
+                    <p className="text-slate-800 text-base">gurusaidevelopers97@gmail.com</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Column 2: Interactive Contact Form */}
-          <div className="bg-white p-8 md:p-12 rounded-lg shadow-sm border border-slate-200">
-            <h2 className="text-3xl font-bold text-slate-900 mb-6 tracking-tight">Get In Touch</h2>
-            <p className="text-slate-600 mb-10 leading-relaxed max-w-lg">
-              Have questions or need more information? Reach out to us today. Our team will be happy to assist you and solve your queries.
-            </p>
+          {/* Right Column: Clean White Form */}
+          <div className="w-full lg:w-3/5 p-10 md:p-14 bg-white">
+            <h3 className="text-2xl font-bold text-slate-900 mb-8 border-b pb-4">Send us a Message</h3>
 
-            {/* Added onSubmit handler here */}
             <form onSubmit={handleSubmit} className="space-y-6">
               
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-2">
-                  Your Name*
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name" // The 'name' attribute is what Web3Forms reads
-                  required
-                  placeholder="Your Name*"
-                  className="w-full px-4 py-3.5 border border-slate-300 rounded focus:border-amber-500 focus:ring-1 focus:ring-amber-500 bg-white"
-                />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-semibold text-slate-700 mb-2">
+                    Full Name *
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    placeholder="John Doe"
+                    className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:border-amber-500 focus:ring-2 focus:ring-amber-200 focus:bg-white transition-all outline-none"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="mobile" className="block text-sm font-semibold text-slate-700 mb-2">
+                    Mobile Number *
+                  </label>
+                  <input
+                    type="tel"
+                    id="mobile"
+                    name="mobile"
+                    required
+                    placeholder="+91 90000 00000"
+                    className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:border-amber-500 focus:ring-2 focus:ring-amber-200 focus:bg-white transition-all outline-none"
+                  />
+                </div>
               </div>
 
               <div>
-                <label htmlFor="mobile" className="block text-sm font-medium text-slate-700 mb-2">
-                  Mobile No*
-                </label>
-                <input
-                  type="tel"
-                  id="mobile"
-                  name="mobile"
-                  required
-                  placeholder="Mobile No*"
-                  className="w-full px-4 py-3.5 border border-slate-300 rounded focus:border-amber-500 focus:ring-1 focus:ring-amber-500 bg-white"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-2">
-                  Email (Optional)
+                <label htmlFor="email" className="block text-sm font-semibold text-slate-700 mb-2">
+                  Email Address (Optional)
                 </label>
                 <input
                   type="email"
                   id="email"
                   name="email"
-                  placeholder="Optional"
-                  className="w-full px-4 py-3.5 border border-slate-300 rounded focus:border-amber-500 focus:ring-1 focus:ring-amber-500 bg-white"
+                  placeholder="company@domain.com"
+                  className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:border-amber-500 focus:ring-2 focus:ring-amber-200 focus:bg-white transition-all outline-none"
                 />
               </div>
 
-              {/* Dynamic Submit Button */}
+              <div>
+                <label htmlFor="message" className="block text-sm font-semibold text-slate-700 mb-2">
+                  Project Details
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Tell us about your requirement..."
+                  className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:border-amber-500 focus:ring-2 focus:ring-amber-200 focus:bg-white transition-all outline-none resize-none"
+                ></textarea>
+              </div>
+
               <button
                 type="submit"
-                className={`w-full px-8 py-4 rounded font-bold transition text-lg shadow-sm ${
+                className={`w-full px-8 py-4 rounded-lg font-bold transition-all text-lg shadow-md hover:shadow-lg mt-4 ${
                   buttonText === "SENT SUCCESSFULLY ✓" 
                     ? "bg-emerald-500 text-white hover:bg-emerald-600" 
                     : "bg-amber-500 text-slate-900 hover:bg-amber-400"
@@ -151,7 +173,6 @@ export default function Contact() {
                 {buttonText}
               </button>
 
-              {/* Status Message */}
               {formStatus && (
                 <p className={`text-center font-medium mt-4 ${buttonText.includes("ERROR") ? "text-red-500" : "text-emerald-600"}`}>
                   {formStatus}

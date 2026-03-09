@@ -53,7 +53,7 @@ export default function Home() {
             {/* Logo 1 - Century */}
             <div className="flex flex-col items-center gap-4 group cursor-pointer">
               <img 
-                src="/logos/century.png" 
+                src="/logos/century-logo.png" 
                 alt="Century Real Estate" 
                 className="h-20 w-auto transition-transform duration-300 group-hover:scale-105" 
               />
@@ -65,7 +65,7 @@ export default function Home() {
             {/* Logo 2 - Sattva */}
             <div className="flex flex-col items-center gap-4 group cursor-pointer">
               <img 
-                src="/logos/sattva.png" 
+                src="/logos/sattva-logo.png" 
                 alt="Sattva Group" 
                 className="h-20 w-auto transition-transform duration-300 group-hover:scale-105" 
               />
@@ -77,7 +77,7 @@ export default function Home() {
             {/* Logo 3 - Living Walls */}
             <div className="flex flex-col items-center gap-4 group cursor-pointer">
               <img 
-                src="/logos/living walls.png" 
+                src="/logos/living walls-logo.png" 
                 alt="Living Walls" 
                 className="h-16 w-auto transition-transform duration-300 group-hover:scale-105" 
               />
@@ -89,7 +89,7 @@ export default function Home() {
             {/* Logo 4 - Manipal */}
             <div className="flex flex-col items-center gap-4 group cursor-pointer">
               <img 
-                src="/logos/manipal.png" 
+                src="/logos/manipal-logo.png" 
                 alt="Manipal" 
                 className="h-24 w-auto transition-transform duration-300 group-hover:scale-105" 
               />
@@ -101,7 +101,7 @@ export default function Home() {
             {/* Logo 5 - Vihana */}
             <div className="flex flex-col items-center gap-4 group cursor-pointer">
               <img 
-                src="/logos/vihana.png" 
+                src="/logos/vihana-logo.png" 
                 alt="Vihana" 
                 className="h-24 w-auto transition-transform duration-300 group-hover:scale-105" 
               />

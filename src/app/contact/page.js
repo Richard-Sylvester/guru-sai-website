@@ -1,6 +1,7 @@
 "use client"; 
 
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   const [buttonText, setButtonText] = useState("REQUEST A CALL BACK");
@@ -45,18 +46,38 @@ export default function Contact() {
   return (
     <main className="flex flex-col w-full bg-slate-50 min-h-screen">
       
-      {/* Header Banner */}
+      {/* Header Banner - Keeps the instant load CSS animation */}
       <section className="w-full bg-slate-900 pt-12 pb-12 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight animate-fade-in-up">Contact Us</h1>
         <div className="w-16 h-1 bg-amber-500 mx-auto mt-6 animate-fade-in-up" style={{ animationDelay: '0.3s' }}></div>
       </section>
 
-      {/* Content Section - The New Unified Split-Card */}
-      <section className="max-w-6xl mx-auto px-4 py-16 w-full mt-12 z-10">
-        <div className="bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col lg:flex-row border border-slate-100">
+      {/* Content Section - Upgraded with Framer Motion Stagger */}
+      <section className="max-w-6xl mx-auto px-4 py-16 w-full mt-12 z-10 overflow-hidden">
+        
+        {/* Master Stagger Container */}
+        <motion.div 
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.1 }}
+          variants={{
+            hidden: { opacity: 0 },
+            show: {
+              opacity: 1,
+              transition: { staggerChildren: 0.3 } // 0.3s delay between Left and Right panels
+            }
+          }}
+          className="bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col lg:flex-row border border-slate-100"
+        >
           
-          {/* Left Column: Dark Corporate Info Panel */}
-          <div className="w-full lg:w-2/5 bg-slate-200 text-white p-10 md:p-14 flex flex-col justify-between relative overflow-hidden">
+          {/* Left Column: Dark Corporate Info Panel (Animates First) */}
+          <motion.div 
+            variants={{
+              hidden: { opacity: 0, y: 40 },
+              show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+            }}
+            className="w-full lg:w-2/5 bg-slate-200 text-white p-10 md:p-14 flex flex-col justify-between relative overflow-hidden"
+          >
             
             {/* Subtle background decoration */}
             <div className="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-slate-800 rounded-full opacity-50"></div>
@@ -98,10 +119,16 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          {/* Right Column: Clean White Form */}
-          <div className="w-full lg:w-3/5 p-10 md:p-14 bg-white">
+          {/* Right Column: Clean White Form (Animates Second) */}
+          <motion.div 
+            variants={{
+              hidden: { opacity: 0, y: 40 },
+              show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+            }}
+            className="w-full lg:w-3/5 p-10 md:p-14 bg-white"
+          >
             <h3 className="text-2xl font-bold text-slate-900 mb-8 border-b pb-4">Send us a Message</h3>
 
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -179,9 +206,9 @@ export default function Contact() {
                 </p>
               )}
             </form>
-          </div>
+          </motion.div>
           
-        </div>
+        </motion.div>
       </section>
     </main>
   );

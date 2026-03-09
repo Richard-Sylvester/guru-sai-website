@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 // 1. THIS IS OUR DATA ARRAY (Mocking a Database)
 const projectsData = [
@@ -43,44 +46,69 @@ export default function Projects() {
   return (
     <main className="flex flex-col w-full bg-slate-50 min-h-screen">
       
-      {/* Header */}
+      {/* Header - CSS Animation */}
       <section className="w-full bg-slate-900 py-20 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight animate-fade-in-up">Our Projects</h1>
         <p className="text-slate-400 mt-4 text-lg max-w-2xl mx-auto px-4 animate-fade-in-up"style={{ animationDelay: '0.3s' }}>Over 270 acres of premium plotted development executed.</p>
         <div className="w-16 h-1 bg-amber-500 mx-auto mt-6 animate-fade-in-up" style={{ animationDelay: '0.6s' }}></div>
       </section>
 
-      {/* Projects Grid */}
-      <section className="max-w-7xl mx-auto px-4 py-16 w-full">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* Projects Grid - Framer Motion Animation */}
+      <section className="max-w-7xl mx-auto px-4 py-16 w-full overflow-hidden">
+        
+        {/* Master Stagger Container */}
+        <motion.div 
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.1 }}
+          variants={{
+            hidden: { opacity: 0 },
+            show: {
+              opacity: 1,
+              transition: { staggerChildren: 0.15 } // 0.15s stagger delay
+            }
+          }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
           
-          {/* 2. THE MAP FUNCTION: Looping through our data */}
+          {/* 2. THE MAP FUNCTION: Now rendering Framer Motion elements */}
           {projectsData.map((project) => (
-            <div key={project.id} className="bg-white rounded-lg overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg transition flex flex-col">
+            <motion.div 
+              key={project.id} 
+              variants={{
+                hidden: { opacity: 0, y: 40 },
+                show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
+              }}
+              className="bg-white rounded-lg overflow-hidden shadow-sm border border-slate-200 hover:shadow-xl hover:border-amber-400 transition-all duration-300 flex flex-col group cursor-pointer"
+            >
               
-              {/* Image Placeholder */}
-              <div className="h-48 bg-slate-200 w-full relative">
+              {/* Image Placeholder with Hover Zoom */}
+              <div className="h-48 bg-slate-200 w-full relative overflow-hidden">
+                
+                {/* Simulated Image Background - zooms on hover */}
+                <div className="absolute inset-0 bg-slate-300 transform transition-transform duration-500 group-hover:scale-105"></div>
+                
                 {/* Status Badge */}
-                <span className={`absolute top-4 right-4 px-3 py-1 text-xs font-bold uppercase tracking-wider rounded ${
-                  project.status === 'Completed' ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800'
+                <span className={`absolute top-4 right-4 px-3 py-1 text-xs font-bold uppercase tracking-wider rounded z-10 shadow-sm ${
+                  project.status === 'Completed' ? 'bg-emerald-100 text-emerald-800 border border-emerald-200' : 'bg-amber-100 text-amber-800 border border-amber-200'
                 }`}>
                   {project.status}
                 </span>
               </div>
 
               {/* Card Content */}
-              <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">{project.name}</h3>
+              <div className="p-6 flex flex-col flex-grow relative z-10 bg-white">
+                <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-amber-600 transition-colors duration-300">{project.name}</h3>
                 <p className="text-amber-600 font-semibold text-sm mb-4">{project.size}</p>
                 <p className="text-slate-600 text-sm leading-relaxed flex-grow">
                   {project.details}
                 </p>
               </div>
               
-            </div>
+            </motion.div>
           ))}
 
-        </div>
+        </motion.div>
       </section>
 
     </main>

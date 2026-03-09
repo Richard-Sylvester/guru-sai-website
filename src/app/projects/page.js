@@ -53,42 +53,27 @@ export default function Projects() {
         <div className="w-16 h-1 bg-amber-500 mx-auto mt-6 animate-fade-in-up" style={{ animationDelay: '0.6s' }}></div>
       </section>
 
-      {/* Projects Grid - Framer Motion Animation */}
+     {/* Projects Grid - Individual Sensors */}
       <section className="max-w-7xl mx-auto px-4 py-16 w-full overflow-hidden">
         
-        {/* Master Stagger Container */}
-        <motion.div 
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.1 }}
-          variants={{
-            hidden: { opacity: 0 },
-            show: {
-              opacity: 1,
-              transition: { staggerChildren: 0.15 } // 0.15s stagger delay
-            }
-          }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-        >
+        {/* Standard Grid Container */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           
-          {/* 2. THE MAP FUNCTION: Now rendering Framer Motion elements */}
-          {projectsData.map((project) => (
+          {/* THE MAP FUNCTION: Using 'index' for row-based staggering */}
+          {projectsData.map((project, index) => (
             <motion.div 
               key={project.id} 
-              variants={{
-                hidden: { opacity: 0, y: 40 },
-                show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
-              }}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }} // Waits for the user to scroll to it
+              transition={{ duration: 0.5, delay: (index % 3) * 0.15, ease: "easeOut" }}
               className="bg-white rounded-lg overflow-hidden shadow-sm border border-slate-200 hover:shadow-xl hover:border-amber-400 transition-all duration-300 flex flex-col group cursor-pointer"
             >
               
               {/* Image Placeholder with Hover Zoom */}
               <div className="h-48 bg-slate-200 w-full relative overflow-hidden">
-                
-                {/* Simulated Image Background - zooms on hover */}
                 <div className="absolute inset-0 bg-slate-300 transform transition-transform duration-500 group-hover:scale-105"></div>
                 
-                {/* Status Badge */}
                 <span className={`absolute top-4 right-4 px-3 py-1 text-xs font-bold uppercase tracking-wider rounded z-10 shadow-sm ${
                   project.status === 'Completed' ? 'bg-emerald-100 text-emerald-800 border border-emerald-200' : 'bg-amber-100 text-amber-800 border border-amber-200'
                 }`}>
@@ -108,7 +93,7 @@ export default function Projects() {
             </motion.div>
           ))}
 
-        </motion.div>
+        </div>
       </section>
 
     </main>

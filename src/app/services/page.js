@@ -61,33 +61,21 @@ export default function Services() {
       {/* Services Grid Section */}
       <section className="max-w-7xl mx-auto px-4 py-20 w-full overflow-hidden">
         
-        {/* Master Stagger Container */}
-        <motion.div 
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.1 }}
-          variants={{
-            hidden: { opacity: 0 },
-            show: {
-              opacity: 1,
-              transition: { staggerChildren: 0.15 } // A snappy 0.15s delay between each card
-            }
-          }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
-        >
+        {/* Reverted to a standard CSS grid - no more Master Container trigger! */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           
-          {/* THE MAP FUNCTION: Now rendering Framer Motion elements */}
-          {servicesData.map((service) => (
+          {/* THE MAP FUNCTION: Now using 'index' to calculate specific delays */}
+          {servicesData.map((service, index) => (
             <motion.div 
               key={service.id} 
-              variants={{
-                hidden: { opacity: 0, y: 40 },
-                show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
-              }}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }} // Waits until the card is 50px physically inside the screen!
+              transition={{ duration: 0.5, delay: (index % 3) * 0.15, ease: "easeOut" }}
               className="bg-white p-10 rounded-lg shadow-sm border border-slate-200 hover:border-amber-500 hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group cursor-default"
             >
               
-              {/* Icon Container with hover effect */}
+              {/* Icon Container */}
               <div className="w-16 h-16 bg-slate-100 group-hover:bg-amber-100 rounded-full flex items-center justify-center text-3xl mb-6 shadow-sm transition-colors duration-300">
                  {service.icon}
               </div>
@@ -101,14 +89,14 @@ export default function Services() {
             </motion.div>
           ))}
 
-        </motion.div>
+        </div>
 
-        {/* Call to Action Row - Animates in after the grid */}
+        {/* Call to Action Row */}
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.6 }}
           className="mt-20 bg-slate-100 p-8 rounded-lg text-center border border-slate-200 relative overflow-hidden"
         >
            <h3 className="text-2xl font-bold text-slate-900 mb-4 relative z-10">Need a Reliable Execution Partner?</h3>

@@ -197,6 +197,18 @@ export default function Home() {
               <span className="text-sm font-bold text-slate-500 uppercase tracking-widest group-hover:text-amber-600 transition-colors duration-300">Vihana</span>
             </motion.div>
 
+            {/* Logo 6 - Chanakya University */}
+            <motion.div 
+              variants={{
+                hidden: { opacity: 0, y: 30 },
+                show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+              }}
+              className="flex flex-col items-center gap-4 group cursor-pointer"
+            >
+              <img src="/logos/chanakya university-logo.png" alt="Chanakya University" className="h-16 w-auto transition-transform duration-300 group-hover:scale-105" />
+              <span className="text-sm font-bold text-slate-500 uppercase tracking-widest group-hover:text-amber-600 transition-colors duration-300">Chanakya University</span>
+            </motion.div>
+
           </motion.div>
         </div>
       </section>

@@ -29,17 +29,66 @@ const projectsData = [
   {
     id: 4,
     name: "Century Greens, Devanahalli",
-    status: "On-Going",
+    status: "Completed",
     size: "23 Acre Development",
     details: "BIAPPA approved plots. Executed paved roads, kerbs, drains, plumbing works, and parks.",
   },
   {
     id: 5,
     name: "Century Sports Village, Devanahalli",
+    status: "Completed",
+    size: "51 Acre Development",
+    details: "Paved & asphalt roads, kerbs, drains, plumbing works, external electrical works, overhead tank, parks & sports amenities.",
+  },
+  {
+    id: 6,
+    name: "Century Seasons",
+    status: "Completed",
+    size: "51 Acre Development",
+    details: "Paved & asphalt roads, kerbs, drains, plumbing works, external electrical works, overhead tank, parks & sports amenities.",
+  },
+  {
+    id: 7,
+    name: "Century Trails",
+    status: "Completed",
+    size: "51 Acre Development",
+    details: "Paved & asphalt roads, kerbs, drains, plumbing works, external electrical works, overhead tank, parks & sports amenities.",
+  },
+  {
+    id: 8,
+    name: "Hush Fields by Living Walls",
+    status: "Completed",
+    size: "51 Acre Development",
+    details: "Paved & asphalt roads, kerbs, drains, plumbing works, external electrical works, overhead tank, parks & sports amenities.",
+  },
+  {
+    id: 9,
+    name: "Sattva Bhumi",
+    status: "Completed",
+    size: "51 Acre Development",
+    details: "Paved & asphalt roads, kerbs, drains, plumbing works, external electrical works, overhead tank, parks & sports amenities.",
+  },
+  {
+    id: 10,
+    name: "MAHE - Manipal Academy of Higher Education",
+    status: "Completed",
+    size: "51 Acre Development",
+    details: "Paved & asphalt roads, kerbs, drains, plumbing works, external electrical works, overhead tank, parks & sports amenities.",
+  },
+  {
+    id: 11,
+    name: "Century Seraya One World",
     status: "On-Going",
     size: "51 Acre Development",
     details: "Paved & asphalt roads, kerbs, drains, plumbing works, external electrical works, overhead tank, parks & sports amenities.",
-  }
+  },
+  {
+    id: 12,
+    name: "Windsor Park",
+    status: "On-Going",
+    size: "51 Acre Development",
+    details: "Paved & asphalt roads, kerbs, drains, plumbing works, external electrical works, overhead tank, parks & sports amenities.",
+  } 
 ];
 
 export default function Projects() {

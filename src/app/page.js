@@ -226,38 +226,48 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
-            {/* Service Card 1 */}
-            <div className="bg-white p-8 rounded-lg shadow-sm border border-slate-200 hover:shadow-md transition">
-              <div className="w-12 h-12 bg-slate-100 text-slate-900 rounded flex items-center justify-center mb-6">
+            {/* Service Card 1 - Now a Clickable Link! */}
+            <Link href="/services" className="bg-white p-8 rounded-lg shadow-sm border border-slate-200 hover:shadow-xl hover:border-amber-400 hover:-translate-y-2 transition-all duration-300 flex flex-col group cursor-pointer">
+              <div className="w-12 h-12 bg-slate-100 group-hover:bg-amber-100 text-slate-900 group-hover:text-amber-600 rounded flex items-center justify-center mb-6 transition-colors duration-300">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Premium Plotted Development</h3>
-              <p className="text-slate-600 leading-relaxed">
+              <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-amber-600 transition-colors duration-300">Premium Plotted Development</h3>
+              <p className="text-slate-600 leading-relaxed flex-grow">
                 End-to-end turnkey plotted development projects. Successfully developed over 270 acres of area.
               </p>
-            </div>
+              {/* This arrow fades and slides in on hover */}
+              <div className="mt-6 flex items-center text-amber-500 font-bold opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                Explore Service <span className="ml-2">→</span>
+              </div>
+            </Link>
 
             {/* Service Card 2 */}
-            <div className="bg-white p-8 rounded-lg shadow-sm border border-slate-200 hover:shadow-md transition">
-              <div className="w-12 h-12 bg-slate-100 text-slate-900 rounded flex items-center justify-center mb-6">
+            <Link href="/services" className="bg-white p-8 rounded-lg shadow-sm border border-slate-200 hover:shadow-xl hover:border-amber-400 hover:-translate-y-2 transition-all duration-300 flex flex-col group cursor-pointer">
+              <div className="w-12 h-12 bg-slate-100 group-hover:bg-amber-100 text-slate-900 group-hover:text-amber-600 rounded flex items-center justify-center mb-6 transition-colors duration-300">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Road Works</h3>
-              <p className="text-slate-600 leading-relaxed">
+              <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-amber-600 transition-colors duration-300">Road Works</h3>
+              <p className="text-slate-600 leading-relaxed flex-grow">
                 Heavy-duty infrastructure execution including Concrete Roads, Asphalt Roads, and Paver Roads.
               </p>
-            </div>
+              <div className="mt-6 flex items-center text-amber-500 font-bold opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                Explore Service <span className="ml-2">→</span>
+              </div>
+            </Link>
 
             {/* Service Card 3 */}
-            <div className="bg-white p-8 rounded-lg shadow-sm border border-slate-200 hover:shadow-md transition">
-              <div className="w-12 h-12 bg-slate-100 text-slate-900 rounded flex items-center justify-center mb-6">
+            <Link href="/services" className="bg-white p-8 rounded-lg shadow-sm border border-slate-200 hover:shadow-xl hover:border-amber-400 hover:-translate-y-2 transition-all duration-300 flex flex-col group cursor-pointer">
+              <div className="w-12 h-12 bg-slate-100 group-hover:bg-amber-100 text-slate-900 group-hover:text-amber-600 rounded flex items-center justify-center mb-6 transition-colors duration-300">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Civil & Hardscape Works</h3>
-              <p className="text-slate-600 leading-relaxed">
+              <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-amber-600 transition-colors duration-300">Civil & Hardscape Works</h3>
+              <p className="text-slate-600 leading-relaxed flex-grow">
                 Comprehensive civil construction, landscaping, Sewage Treatment Plants (STP), and Over Head Tanks.
               </p>
-            </div>
+              <div className="mt-6 flex items-center text-amber-500 font-bold opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                Explore Service <span className="ml-2">→</span>
+              </div>
+            </Link>
 
           </div>
         </div>

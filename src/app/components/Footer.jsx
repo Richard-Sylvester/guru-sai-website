@@ -57,9 +57,22 @@ export default function Footer() {
         </div>
         
         {/* Bottom Bar */}
-        <div className="border-t border-slate-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
+        <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
+  
           <p>&copy; {new Date().getFullYear()} Guru Sai Constructions. All rights reserved.</p>
-          <p className="mt-2 md:mt-0 tracking-widest uppercase text-slate-500">Engineered by Richard</p>
+          
+          {/* The Subtle Portfolio Link */}
+          <p className="mt-4 md:mt-0 opacity-70 hover:opacity-100 transition-opacity duration-300">
+            Engineered by{" "}
+            <a 
+              href="https://richardsylvester.vercel.app/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="font-semibold hover:text-amber-500 transition-colors duration-300"
+            >
+              Richard
+            </a>
+          </p>
         </div>
       </div>
     </footer>

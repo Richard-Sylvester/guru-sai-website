@@ -38,7 +38,7 @@ const servicesData = [
     title: "MS Fabrication Works",
     description: "Industrial-grade mild steel fabrication for heavy infrastructure, structural supports, and custom engineering requirements within our plotted developments.",
     icon: "⚙️",
-    image: "/century-sportsvillage-5.webp"
+    image: "/sattva-3.webp"
   }
 ];
 

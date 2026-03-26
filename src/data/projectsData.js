@@ -44,7 +44,7 @@ export const projectsData = [
     size: "51 Acre Development",
     details: "Paved & asphalt roads, kerbs, drains, plumbing works, external electrical works, overhead tank, parks & sports amenities.",
     mainImage: "/century-trails-1.webp",
-    gallery: ["/century-trails-2.webp"]
+    gallery: ["/century-trails-2.webp", "/century-trails-3.jpeg", "/century-trails-4.jpeg", "/century-trails-5.jpeg", "/century-trails-6.jpeg", "/century-trails-7.jpeg", "/century-trails-8.jpeg"]
   },
   {
     id: 6,

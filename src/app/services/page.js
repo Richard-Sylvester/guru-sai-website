@@ -66,7 +66,7 @@ export default function Services() {
       {/* Services Grid Section */}
       <section className="max-w-7xl mx-auto px-4 py-20 w-full overflow-hidden">
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="flex flex-wrap justify-center gap-10">
           
           {/* THE MAP FUNCTION */}
           {servicesData.map((service, index) => (
@@ -76,7 +76,7 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: (index % 3) * 0.15, ease: "easeOut" }}
-              className="bg-white rounded-xl shadow-sm border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden group cursor-default"
+              className="w-full sm:w-[calc(50%-1.25rem)] lg:w-[calc(33.333%-1.7rem)] bg-white rounded-xl shadow-sm border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden group cursor-default"
             >
               
               {/* Top Image Banner with hover zoom */}

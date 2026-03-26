@@ -88,8 +88,8 @@ export const projectsData = [
     status: "Completed",
     size: "51 Acre Development",
     details: "Paved & asphalt roads, kerbs, drains, plumbing works, external electrical works, overhead tank, parks & sports amenities.",
-    mainImage: "/placeholders/main-2.jpg",
-    gallery: ["/placeholders/gal-2a.jpg", "/placeholders/gal-2b.jpg", "/placeholders/gal-2c.jpg"]
+    mainImage: "/mahe-3.webp",
+    gallery: ["/mahe-2.webp", "/mahe-1.webp", "/mahe-4.webp", "/mahe-5.webp"]
   },
   {
     id: 11,
@@ -106,7 +106,7 @@ export const projectsData = [
     status: "On-Going",
     size: "51 Acre Development",
     details: "Paved & asphalt roads, kerbs, drains, plumbing works, external electrical works, overhead tank, parks & sports amenities.",
-    mainImage: "/placeholders/main-2.jpg",
-    gallery: ["/placeholders/gal-2a.jpg", "/placeholders/gal-2b.jpg", "/placeholders/gal-2c.jpg"]
+    mainImage: "/windsor-1.jpeg",
+    gallery: ["/windsor-2.jpeg", "/windsor-3.jpeg", "/windsor-4.jpeg"]
   } 
 ];

@@ -74,7 +74,7 @@ export default function About() {
                 show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
               }}
             >
-              We have progressed remarkably in the field of construction. Our business model has proven our expertise in achieving expected Quality and desired economy. All raw materials procured are checked at our quality inspection unit to ensure quality for our clients. We undertake turnkey plotted development projects. We have completed plotted development works for around 270 acres of area.
+              We have progressed remarkably in the field of construction. Our business model has proven our expertise in achieving expected Quality and desired economy. All raw materials procured are checked at our quality inspection unit to ensure quality for our clients. We undertake turnkey plotted development projects. We have completed plotted development works for around 400+ acres of area.
             </motion.p>
             
           </div>

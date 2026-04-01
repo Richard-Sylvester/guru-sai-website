@@ -4,7 +4,8 @@ export const projectsData = [
   // src/data/projectsData.js sample entry
 {
   id: 1,
-  name: "Century Artizan, Yelahanka",
+  name: "Century Artizan",
+  location: "Yelahanka, Bengaluru",
   status: "Completed",
   size: "49 Acre Development, 246 Plots",
   // 1. Short list for the Grid Cards
@@ -13,7 +14,6 @@ export const projectsData = [
     "Site Demarcation",
     "Plumbing Works",
     "Electrical Works",
-    "Landscape"
   ],
   // 2. Deep Dive for the Project Detail Page
   fullScope: [
@@ -57,7 +57,8 @@ export const projectsData = [
 },
   {
     id: 2,
-    name: "Century Eden, Doddaballapur",
+    name: "Century Eden",
+    location: "Doddaballapur, Bengaluru",
     status: "Completed",
     size: "52 Acre Development, 323 Plots",
     // 1. Short list for the Grid Cards
@@ -66,7 +67,6 @@ export const projectsData = [
     "Site Demarcation",
     "Plumbing Works",
     "Electrical Works",
-    "Landscape"
   ],
   // 2. Deep Dive for the Project Detail Page
   fullScope: [
@@ -110,7 +110,8 @@ export const projectsData = [
   },
   {
     id: 3,
-    name: "Century Greens, Devanahalli",
+    name: "Century Greens",
+    location: "Devanahalli, Bengaluru",
     status: "Completed",
     size: "31 Acre Development, 239 Plots",
     // 1. Short list for the Grid Cards
@@ -119,7 +120,6 @@ export const projectsData = [
     "Site Demarcation",
     "Plumbing Works",
     "Electrical Works",
-    "Landscape"
   ],
   // 2. Deep Dive for the Project Detail Page
   fullScope: [
@@ -163,7 +163,8 @@ export const projectsData = [
   },
   {
     id: 4,
-    name: "Century Sports Village, Devanahalli",
+    name: "Century Sports Village",
+    location: "Devanahalli, Bengaluru",
     status: "Completed",
     size: "51 Acre Development, 745 Plots",
     // 1. Short list for the Grid Cards
@@ -172,7 +173,6 @@ export const projectsData = [
     "Site Demarcation",
     "Plumbing Works",
     "Electrical Works",
-    "Landscape"
   ],
   // 2. Deep Dive for the Project Detail Page
   fullScope: [
@@ -216,7 +216,8 @@ export const projectsData = [
   },
   {
     id: 5,
-    name: "Century Trails, Devanahalli",
+    name: "Century Trails",
+    location: "Devanahalli, Bengaluru",
     status: "Completed",
     size: "25 Acre Development, 346 Plots",
     // 1. Short list for the Grid Cards
@@ -269,7 +270,8 @@ export const projectsData = [
   },
   {
     id: 6,
-    name: "Century Wintersun, Doddaballapur",
+    name: "Century Wintersun",
+    location: "Doddaballapur, Bengaluru",
     status: "Completed",
     size: "47 Acre Development",
     // 1. Short list for the Grid Cards
@@ -278,7 +280,6 @@ export const projectsData = [
     "Site Demarcation",
     "Plumbing Works",
     "Electrical Works",
-    "Landscape"
   ],
   // 2. Deep Dive for the Project Detail Page
   fullScope: [
@@ -322,7 +323,8 @@ export const projectsData = [
   },
   {
     id: 7,
-    name: "Century Seasons, Devanahalli",
+    name: "Century Seasons",
+    location: "Devanahalli, Bengaluru",
     status: "Completed",
     size: "25 Acre Development, 329 Plots",
     // 1. Short list for the Grid Cards
@@ -375,7 +377,8 @@ export const projectsData = [
   },
   {
     id: 8,
-    name: "Hush Fields by Living Walls, Hennur Bagalur",
+    name: "Hush Fields by Living Walls",
+    location: "Hennur Bagalur, Bengaluru",
     status: "Completed",
     size: "10 Acre Development, 103 Plots",
     // 1. Short list for the Grid Cards
@@ -384,7 +387,6 @@ export const projectsData = [
     "Site Demarcation",
     "Plumbing Works",
     "Electrical Works",
-    "Landscape"
   ],
   // 2. Deep Dive for the Project Detail Page
   fullScope: [
@@ -428,7 +430,8 @@ export const projectsData = [
   },
   {
     id: 9,
-    name: "Sattva Bhumi, Devanahalli",
+    name: "Sattva Bhumi",
+    location: "Devanahalli, Bengaluru",
     status: "Completed",
     size: "20 Acre Development, 356 Plots",
     // 1. Short list for the Grid Cards
@@ -437,7 +440,6 @@ export const projectsData = [
     "Site Demarcation",
     "Plumbing Works",
     "Electrical Works",
-    "Landscape"
   ],
   // 2. Deep Dive for the Project Detail Page
   fullScope: [
@@ -481,16 +483,14 @@ export const projectsData = [
   },
   {
     id: 10,
-    name: "MAHE - Manipal Academy of Higher Education, Yelahanka",
+    name: "MAHE - Manipal Academy of Higher Education",
+    location: "Yelahanka, Bengaluru",
     status: "Completed",
     size: "80 Acre Development",
     // 1. Short list for the Grid Cards
   details: [
     "Road Works",
-    "Site Demarcation",
     "Plumbing Works",
-    "Electrical Works",
-    "Landscape"
   ],
   // 2. Deep Dive for the Project Detail Page
   fullScope: [
@@ -534,7 +534,8 @@ export const projectsData = [
   },
   {
     id: 11,
-    name: "Windsor Park, Doddaballapur",
+    name: "Windsor Park",
+    location: "Doddaballapur, Bengaluru",
     status: "On-Going",
     size: "12 Acre Development, 130 Plots",
     // 1. Short list for the Grid Cards
@@ -543,7 +544,7 @@ export const projectsData = [
     "Site Demarcation",
     "Plumbing Works",
     "Electrical Works",
-    "Landscape"
+    "Civil Works"
   ],
   // 2. Deep Dive for the Project Detail Page
   fullScope: [
@@ -587,7 +588,8 @@ export const projectsData = [
   }, 
   {
     id: 12,
-    name: "Century Seraya One World, Devanahalli",
+    name: "Century Seraya One World",
+    location: "Devanahalli, Bengaluru",
     status: "On-Going",
     size: "135 Acre Development, 160+ Plots",
     // 1. Short list for the Grid Cards
@@ -596,7 +598,6 @@ export const projectsData = [
     "Site Demarcation",
     "Plumbing Works",
     "Electrical Works",
-    "Landscape"
   ],
   // 2. Deep Dive for the Project Detail Page
   fullScope: [

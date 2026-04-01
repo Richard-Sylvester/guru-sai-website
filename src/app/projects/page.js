@@ -44,8 +44,27 @@ export default function Projects() {
 
                 {/* Card Content */}
                 <div className="p-6 flex flex-col flex-grow relative z-10 bg-white">
-                  <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-amber-600 transition-colors duration-300">{project.name}</h3>
-                  <p className="text-amber-600 font-semibold text-sm mb-4">{project.size}</p>
+                  
+                  {/* Project Name */}
+                  <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-amber-600 transition-colors duration-300">
+                    {project.name}
+                  </h3>
+                  
+                  {/* NEW: Location Row with SVG Pin */}
+                  {project.location && (
+                    <div className="flex items-center text-slate-500 text-sm mb-3">
+                      <svg className="w-4 h-4 mr-1.5 text-amber-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.243-4.243a8 8 0 1111.314 0z"></path>
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                      </svg>
+                      {project.location}
+                    </div>
+                  )}
+
+                  {/* Project Size */}
+                  <p className="text-amber-600 font-semibold text-sm mb-4">
+                    {project.size}
+                  </p>
                   
                   {/* The 5 Bullet Points Summary */}
                   <ul className="grid grid-cols-1 gap-2 mb-4">

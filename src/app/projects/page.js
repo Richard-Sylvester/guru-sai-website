@@ -11,7 +11,7 @@ export default function Projects() {
       {/* Header */}
       <section className="w-full bg-slate-900 py-20 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight animate-fade-in-up">Our Projects</h1>
-        <p className="text-slate-400 mt-4 text-lg max-w-2xl mx-auto px-4 animate-fade-in-up"style={{ animationDelay: '0.3s' }}>Over 530 acres of premium plotted development executed.</p>
+        <p className="text-slate-400 mt-4 text-lg max-w-2xl mx-auto px-4 animate-fade-in-up"style={{ animationDelay: '0.3s' }}>Over 400 acres of premium plotted development executed.</p>
         <div className="w-16 h-1 bg-amber-500 mx-auto mt-6 animate-fade-in-up" style={{ animationDelay: '0.6s' }}></div>
       </section>
 

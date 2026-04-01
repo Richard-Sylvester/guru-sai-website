@@ -233,7 +233,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-amber-600 transition-colors duration-300">Premium Plotted Development</h3>
               <p className="text-slate-600 leading-relaxed flex-grow">
-                End-to-end turnkey plotted development projects. Successfully developed over 270 acres of area.
+                End-to-end turnkey plotted development projects. Successfully developed over 400 acres of area.
               </p>
               {/* This arrow fades and slides in on hover */}
               <div className="mt-6 flex items-center text-amber-500 font-bold opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">

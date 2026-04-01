@@ -46,11 +46,23 @@ export default function Projects() {
                 <div className="p-6 flex flex-col flex-grow relative z-10 bg-white">
                   <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-amber-600 transition-colors duration-300">{project.name}</h3>
                   <p className="text-amber-600 font-semibold text-sm mb-4">{project.size}</p>
-                  <p className="text-slate-600 text-sm leading-relaxed flex-grow">
-                    {project.details}
-                  </p>
-                  <p className="text-slate-400 text-sm font-bold mt-4 flex items-center group-hover:text-amber-500 transition-colors">
-                    View Gallery & Details <span className="ml-2">→</span>
+                  
+                  {/* The 5 Bullet Points Summary */}
+                  <ul className="grid grid-cols-1 gap-2 mb-4">
+                    {Array.isArray(project.details) ? (
+                      project.details.map((bullet, i) => (
+                        <li key={i} className="flex items-start text-slate-600 text-sm">
+                          <span className="w-1.5 h-1.5 bg-amber-500 rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                          <span>{bullet}</span>
+                        </li>
+                      ))
+                    ) : (
+                      <li className="text-slate-600 text-sm">{project.details}</li>
+                    )}
+                  </ul>
+
+                  <p className="text-slate-400 text-sm font-bold mt-auto flex items-center group-hover:text-amber-500 transition-colors">
+                    View More <span className="ml-2">→</span>
                   </p>
                 </div>
 

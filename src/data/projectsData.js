@@ -724,7 +724,7 @@ export const projectsData = [
       ]
     },
   ],
-    mainImage: "/placeholders/main-2.jpg",
+    mainImage: "/century-seraya-1.jpeg",
     gallery: ["/placeholders/gal-2a.jpg", "/placeholders/gal-2b.jpg", "/placeholders/gal-2c.jpg"]
   }
 ];

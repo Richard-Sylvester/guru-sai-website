@@ -153,7 +153,7 @@ export const projectsData = [
   {
     id: 3,
     name: "Century Greens",
-    location: "Kundana,Devanahalli, Bengaluru",
+    location: "Kundana, Devanahalli, Bengaluru",
     status: "Completed",
     size: "31 Acre Development, 239 Plots",
     // 1. Short list for the Grid Cards

@@ -412,7 +412,7 @@ export const projectsData = [
   {
     id: 7,
     name: "Century Seasons",
-    location: "Devanahalli, Bengaluru",
+    location: "Lakshmipura Village,Devanahalli, Bengaluru",
     status: "Completed",
     size: "25 Acre Development, 329 Plots",
     // 1. Short list for the Grid Cards

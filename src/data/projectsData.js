@@ -137,7 +137,6 @@ export const projectsData = [
       sectionTitle: "6. Lifestyle Amenities Execution",
       items: [
         { title: "Children’s Play Area:", description: "​Safe, rubber-floored zones equipped with modern slides, swings, and sensory play equipment." },
-        { title: "​Sports Courts:", description: "Dedicated outdoor spaces for high-energy activities like basketball, badminton, and tennis." },
         { title: "​Jogging & Cycling Tracks:", description: "​Tree-lined, continuous loops throughout the property for uninterrupted morning and evening runs." },
         { title: "​Landscaped Parks:", description: "​Manicured gardens with seating pods, gazebos, and open lawns for meditation or yoga." },
         { title: "​Amphitheater:", description: "​An outdoor tiered seating space for community screenings, festivals, and performances." },
@@ -211,7 +210,6 @@ export const projectsData = [
       sectionTitle: "6. Lifestyle Amenities Execution",
       items: [
         { title: "Children’s Play Area:", description: "​Safe, rubber-floored zones equipped with modern slides, swings, and sensory play equipment." },
-        { title: "​Sports Courts:", description: "Dedicated outdoor spaces for high-energy activities like basketball, badminton, and tennis." },
         { title: "​Jogging & Cycling Tracks:", description: "​Tree-lined, continuous loops throughout the property for uninterrupted morning and evening runs." },
         { title: "​Landscaped Parks:", description: "​Manicured gardens with seating pods, gazebos, and open lawns for meditation or yoga." },
         { title: "​Amphitheater:", description: "​An outdoor tiered seating space for community screenings, festivals, and performances." },
@@ -299,7 +297,7 @@ export const projectsData = [
   {
     id: 5,
     name: "Century Trails",
-    location: "Devanahalli, Bengaluru",
+    location: "Bidalur, Devanahalli, Bengaluru",
     status: "Completed",
     size: "25 Acre Development, 346 Plots",
     // 1. Short list for the Grid Cards
@@ -359,7 +357,6 @@ export const projectsData = [
       sectionTitle: "6. Lifestyle Amenities Execution",
       items: [
         { title: "Children’s Play Area:", description: "​Safe, rubber-floored zones equipped with modern slides, swings, and sensory play equipment." },
-        { title: "​Sports Courts:", description: "Dedicated outdoor spaces for high-energy activities like basketball, badminton, and tennis." },
         { title: "​Jogging & Cycling Tracks:", description: "​Tree-lined, continuous loops throughout the property for uninterrupted morning and evening runs." },
         { title: "​Landscaped Parks:", description: "​Manicured gardens with seating pods, gazebos, and open lawns for meditation or yoga." },
         { title: "​Amphitheater:", description: "​An outdoor tiered seating space for community screenings, festivals, and performances." },

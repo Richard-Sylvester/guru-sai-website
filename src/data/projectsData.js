@@ -5,7 +5,7 @@ export const projectsData = [
 {
   id: 1,
   name: "Century Artizan",
-  location: "SpringStreet, Yelahanka, Bengaluru",
+  location: "Nitte Meenakshi College road Yelahanka, Bengaluru",
   status: "Completed",
   size: "49 Acre Development, 246 Plots",
   // 1. Short list for the Grid Cards
@@ -14,6 +14,7 @@ export const projectsData = [
     "​Site Preparation & Demarcation",
     "​Plumbing Systems",
     "​Electrical Solutions",
+    "Landscaping & Lifestyle Amenities Execution"
   ],
   // 2. Deep Dive for the Project Detail Page
   fullScope: [
@@ -35,7 +36,7 @@ export const projectsData = [
       ]
     },
     {
-      sectionTitle: "3. Civil Engineering Works",
+      sectionTitle: "3. Plumbing & Civil Engineering Works",
       items: [
         { title: "Water Supply:", description: "We execute the Installation of high-pressure, segregated pipe networks to manage potable (drinking) and recycled (landscaping/flushing) water lines separately for every plot." },
         { title: "Sewerage System:", description: "Designing and executing the underground gravity-flow networks for the efficient collection and transport of domestic waste." },
@@ -51,6 +52,26 @@ export const projectsData = [
         { title: "Street Lighting:", description: " We implement energy-efficient LED lighting systems with automated timers for safety and visibility." }
       ]
     },
+    {
+      sectionTitle: "5. Landscaping",
+      items: [
+        { title: "Surface Leveling:", description: "Sloping the ground slightly toward drains to prevent water pooling after heavy rain." },
+        { title: "Tough Paving:", description: "Using interlocking blocks for paths so they don't crack under heat or pressure." },
+        { title: "Hidden Utilities:", description: " Running all water and power lines underground to keep the view clean and wire-free." },
+        { title: "Sturdy Fencing:", description: " Building reinforced boundary walls that act as both a security barrier and a noise buffer." }
+      ]
+    },
+    {
+      sectionTitle: "6. Lifestyle Amenities Execution",
+      items: [
+        { title: "Children’s Play Area:", description: "​Safe, rubber-floored zones equipped with modern slides, swings, and sensory play equipment." },
+        { title: "​Sports Courts:", description: "Dedicated outdoor spaces for high-energy activities like basketball, badminton, and tennis." },
+        { title: "​Jogging & Cycling Tracks:", description: "​Tree-lined, continuous loops throughout the property for uninterrupted morning and evening runs." },
+        { title: "​Landscaped Parks:", description: "​Manicured gardens with seating pods, gazebos, and open lawns for meditation or yoga." },
+        { title: "​Amphitheater:", description: "​An outdoor tiered seating space for community screenings, festivals, and performances." },
+        { title: "​Pet Park:", description: "​A fenced-in green space designed for pets to play safely off-leash." }
+      ]
+    }
   ],
   mainImage: "/century-artizan-2.webp", 
   gallery: ["/century-artizan-1.webp", "/century-artizan-3.webp", "/century-artizan-4.webp"]
@@ -67,6 +88,7 @@ export const projectsData = [
     "Site Preparation & Demarcation",
     "Plumbing Systems",
     "Electrical Solutions",
+    "Landscaping & Lifestyle Amenities Execution"
   ],
   // 2. Deep Dive for the Project Detail Page
   fullScope: [
@@ -88,7 +110,7 @@ export const projectsData = [
       ]
     },
     {
-      sectionTitle: "3. Civil Engineering Works",
+      sectionTitle: "3. Plumbing & Civil Engineering Works",
       items: [
         { title: "Water Supply:", description: "We execute the Installation of high-pressure, segregated pipe networks to manage potable (drinking) and recycled (landscaping/flushing) water lines separately for every plot." },
         { title: "Sewerage System:", description: "Designing and executing the underground gravity-flow networks for the efficient collection and transport of domestic waste." },
@@ -104,6 +126,26 @@ export const projectsData = [
         { title: "Street Lighting:", description: " We implement energy-efficient LED lighting systems with automated timers for safety and visibility." }
       ]
     },
+    {
+      sectionTitle: "5. Landscaping",
+      items: [
+        { title: "Surface Leveling:", description: "Sloping the ground slightly toward drains to prevent water pooling after heavy rain." },
+        { title: "Tough Paving:", description: "Using interlocking blocks for paths so they don't crack under heat or pressure." },
+        { title: "Hidden Utilities:", description: " Running all water and power lines underground to keep the view clean and wire-free." },
+        { title: "Sturdy Fencing:", description: " Building reinforced boundary walls that act as both a security barrier and a noise buffer." }
+      ]
+    },
+    {
+      sectionTitle: "6. Lifestyle Amenities Execution",
+      items: [
+        { title: "Children’s Play Area:", description: "​Safe, rubber-floored zones equipped with modern slides, swings, and sensory play equipment." },
+        { title: "​Sports Courts:", description: "Dedicated outdoor spaces for high-energy activities like basketball, badminton, and tennis." },
+        { title: "​Jogging & Cycling Tracks:", description: "​Tree-lined, continuous loops throughout the property for uninterrupted morning and evening runs." },
+        { title: "​Landscaped Parks:", description: "​Manicured gardens with seating pods, gazebos, and open lawns for meditation or yoga." },
+        { title: "​Amphitheater:", description: "​An outdoor tiered seating space for community screenings, festivals, and performances." },
+        { title: "​Pet Park:", description: "​A fenced-in green space designed for pets to play safely off-leash." }
+      ]
+    }
   ],
     mainImage: "/century-eden-1.webp",
     gallery: ["/century-eden-2.webp", "/century-eden-3.webp", "/century-eden-4.webp"]
@@ -120,6 +162,7 @@ export const projectsData = [
     "Site Preparation & Demarcation",
     "Plumbing Systems",
     "Electrical Solutions",
+    "Landscaping & Lifestyle Amenities Execution"
   ],
   // 2. Deep Dive for the Project Detail Page
   fullScope: [
@@ -141,7 +184,7 @@ export const projectsData = [
       ]
     },
     {
-      sectionTitle: "3. Civil Engineering Works",
+      sectionTitle: "3. Plumbing & Civil Engineering Works",
       items: [
         { title: "Water Supply:", description: "We execute the Installation of high-pressure, segregated pipe networks to manage potable (drinking) and recycled (landscaping/flushing) water lines separately for every plot." },
         { title: "Sewerage System:", description: "Designing and executing the underground gravity-flow networks for the efficient collection and transport of domestic waste." },
@@ -157,6 +200,26 @@ export const projectsData = [
         { title: "Street Lighting:", description: " We implement energy-efficient LED lighting systems with automated timers for safety and visibility." }
       ]
     },
+    {
+      sectionTitle: "5. Landscaping",
+      items: [
+        { title: "Surface Leveling:", description: "Sloping the ground slightly toward drains to prevent water pooling after heavy rain." },
+        { title: "Tough Paving:", description: "Using interlocking blocks for paths so they don't crack under heat or pressure." },
+        { title: "Hidden Utilities:", description: " Running all water and power lines underground to keep the view clean and wire-free." },
+        { title: "Sturdy Fencing:", description: " Building reinforced boundary walls that act as both a security barrier and a noise buffer." }
+      ]
+    },
+    {
+      sectionTitle: "6. Lifestyle Amenities Execution",
+      items: [
+        { title: "Children’s Play Area:", description: "​Safe, rubber-floored zones equipped with modern slides, swings, and sensory play equipment." },
+        { title: "​Sports Courts:", description: "Dedicated outdoor spaces for high-energy activities like basketball, badminton, and tennis." },
+        { title: "​Jogging & Cycling Tracks:", description: "​Tree-lined, continuous loops throughout the property for uninterrupted morning and evening runs." },
+        { title: "​Landscaped Parks:", description: "​Manicured gardens with seating pods, gazebos, and open lawns for meditation or yoga." },
+        { title: "​Amphitheater:", description: "​An outdoor tiered seating space for community screenings, festivals, and performances." },
+        { title: "​Pet Park:", description: "​A fenced-in green space designed for pets to play safely off-leash." }
+      ]
+    }
   ],
     mainImage: "/century-greens-1.webp",
     gallery: ["/century-greens-2.webp", "/century-greens-3.webp", "/century-greens-4.webp", "/century-greens-5.webp", "/century-greens-6.webp", "/century-greens-7.webp", "/century-greens-8.webp"]
@@ -173,6 +236,7 @@ export const projectsData = [
     "Site Preparation & Demarcation",
     "Plumbing Systems",
     "Electrical Solutions",
+    "Landscaping & Lifestyle Amenities Execution"
   ],
   // 2. Deep Dive for the Project Detail Page
   fullScope: [
@@ -194,7 +258,7 @@ export const projectsData = [
       ]
     },
     {
-      sectionTitle: "3. Civil Engineering Works",
+      sectionTitle: "3. Plumbing & Civil Engineering Works",
       items: [
         { title: "Water Supply:", description: "We execute the Installation of high-pressure, segregated pipe networks to manage potable (drinking) and recycled (landscaping/flushing) water lines separately for every plot." },
         { title: "Sewerage System:", description: "Designing and executing the underground gravity-flow networks for the efficient collection and transport of domestic waste." },
@@ -210,6 +274,26 @@ export const projectsData = [
         { title: "Street Lighting:", description: " We implement energy-efficient LED lighting systems with automated timers for safety and visibility." }
       ]
     },
+    {
+      sectionTitle: "5. Landscaping",
+      items: [
+        { title: "Surface Leveling:", description: "Sloping the ground slightly toward drains to prevent water pooling after heavy rain." },
+        { title: "Tough Paving:", description: "Using interlocking blocks for paths so they don't crack under heat or pressure." },
+        { title: "Hidden Utilities:", description: " Running all water and power lines underground to keep the view clean and wire-free." },
+        { title: "Sturdy Fencing:", description: " Building reinforced boundary walls that act as both a security barrier and a noise buffer." }
+      ]
+    },
+    {
+      sectionTitle: "6. Lifestyle Amenities Execution",
+      items: [
+        { title: "Children’s Play Area:", description: "​Safe, rubber-floored zones equipped with modern slides, swings, and sensory play equipment." },
+        { title: "​Sports Courts:", description: "Dedicated outdoor spaces for high-energy activities like basketball, badminton, and tennis." },
+        { title: "​Jogging & Cycling Tracks:", description: "​Tree-lined, continuous loops throughout the property for uninterrupted morning and evening runs." },
+        { title: "​Landscaped Parks:", description: "​Manicured gardens with seating pods, gazebos, and open lawns for meditation or yoga." },
+        { title: "​Amphitheater:", description: "​An outdoor tiered seating space for community screenings, festivals, and performances." },
+        { title: "​Pet Park:", description: "​A fenced-in green space designed for pets to play safely off-leash." }
+      ]
+    }
   ],
     mainImage: "/century-sportsvillage-4.webp",
     gallery: ["/century-sportsvillage-3.webp", "/century-sportsvillage-1.webp", "/century-sportsvillage-5.webp", "/century-sportsvillage-6.webp", "/century-sportsvillage-7.webp"]
@@ -248,7 +332,7 @@ export const projectsData = [
       ]
     },
     {
-      sectionTitle: "3. Civil Engineering Works",
+      sectionTitle: "3. Plumbing & Civil Engineering Works",
       items: [
         { title: "Water Supply:", description: "We execute the Installation of high-pressure, segregated pipe networks to manage potable (drinking) and recycled (landscaping/flushing) water lines separately for every plot." },
         { title: "Sewerage System:", description: "Designing and executing the underground gravity-flow networks for the efficient collection and transport of domestic waste." },
@@ -321,7 +405,7 @@ export const projectsData = [
       ]
     },
     {
-      sectionTitle: "3. Civil Engineering Works",
+      sectionTitle: "3. Plumbing & Civil Engineering Works",
       items: [
         { title: "Water Supply:", description: "We execute the Installation of high-pressure, segregated pipe networks to manage potable (drinking) and recycled (landscaping/flushing) water lines separately for every plot." },
         { title: "Sewerage System:", description: "Designing and executing the underground gravity-flow networks for the efficient collection and transport of domestic waste." },
@@ -375,7 +459,7 @@ export const projectsData = [
       ]
     },
     {
-      sectionTitle: "3. Civil Engineering Works",
+      sectionTitle: "3. Plumbing & Civil Engineering Works",
       items: [
         { title: "Water Supply:", description: "We execute the Installation of high-pressure, segregated pipe networks to manage potable (drinking) and recycled (landscaping/flushing) water lines separately for every plot." },
         { title: "Sewerage System:", description: "Designing and executing the underground gravity-flow networks for the efficient collection and transport of domestic waste." },
@@ -391,6 +475,26 @@ export const projectsData = [
         { title: "Street Lighting:", description: " We implement energy-efficient LED lighting systems with automated timers for safety and visibility." }
       ]
     },
+    {
+      sectionTitle: "5. Landscaping",
+      items: [
+        { title: "Surface Leveling:", description: "Sloping the ground slightly toward drains to prevent water pooling after heavy rain." },
+        { title: "Tough Paving:", description: "Using interlocking blocks for paths so they don't crack under heat or pressure." },
+        { title: "Hidden Utilities:", description: " Running all water and power lines underground to keep the view clean and wire-free." },
+        { title: "Sturdy Fencing:", description: " Building reinforced boundary walls that act as both a security barrier and a noise buffer." }
+      ]
+    },
+    {
+      sectionTitle: "6. Lifestyle Amenities Execution",
+      items: [
+        { title: "Children’s Play Area:", description: "​Safe, rubber-floored zones equipped with modern slides, swings, and sensory play equipment." },
+        { title: "​Sports Courts:", description: "Dedicated outdoor spaces for high-energy activities like basketball, badminton, and tennis." },
+        { title: "​Jogging & Cycling Tracks:", description: "​Tree-lined, continuous loops throughout the property for uninterrupted morning and evening runs." },
+        { title: "​Landscaped Parks:", description: "​Manicured gardens with seating pods, gazebos, and open lawns for meditation or yoga." },
+        { title: "​Amphitheater:", description: "​An outdoor tiered seating space for community screenings, festivals, and performances." },
+        { title: "​Pet Park:", description: "​A fenced-in green space designed for pets to play safely off-leash." }
+      ]
+    }
   ],
     mainImage: "/century-seasons-1.webp",
     gallery: ["/century-seasons-2.webp", "/century-seasons-3.webp", "/century-seasons-4.webp", "/century-seasons-5.webp"]
@@ -428,7 +532,7 @@ export const projectsData = [
       ]
     },
     {
-      sectionTitle: "3. Civil Engineering Works",
+      sectionTitle: "3. Plumbing & Civil Engineering Works",
       items: [
         { title: "Water Supply:", description: "We execute the Installation of high-pressure, segregated pipe networks to manage potable (drinking) and recycled (landscaping/flushing) water lines separately for every plot." },
         { title: "Sewerage System:", description: "Designing and executing the underground gravity-flow networks for the efficient collection and transport of domestic waste." },
@@ -481,7 +585,7 @@ export const projectsData = [
       ]
     },
     {
-      sectionTitle: "3. Civil Engineering Works",
+      sectionTitle: "3. Plumbing & Civil Engineering Works",
       items: [
         { title: "Water Supply:", description: "We execute the Installation of high-pressure, segregated pipe networks to manage potable (drinking) and recycled (landscaping/flushing) water lines separately for every plot." },
         { title: "Sewerage System:", description: "Designing and executing the underground gravity-flow networks for the efficient collection and transport of domestic waste." },
@@ -532,7 +636,7 @@ export const projectsData = [
       ]
     },
     {
-      sectionTitle: "3. Civil Engineering Works",
+      sectionTitle: "3. Plumbing & Civil Engineering Works",
       items: [
         { title: "Water Supply:", description: "We execute the Installation of high-pressure, segregated pipe networks to manage potable (drinking) and recycled (landscaping/flushing) water lines separately for every plot." },
         { title: "Sewerage System:", description: "Designing and executing the underground gravity-flow networks for the efficient collection and transport of domestic waste." },
@@ -586,7 +690,7 @@ export const projectsData = [
       ]
     },
     {
-      sectionTitle: "3. Civil Engineering Works",
+      sectionTitle: "3. Plumbing & Civil Engineering Works",
       items: [
         { title: "Water Supply:", description: "We execute the Installation of high-pressure, segregated pipe networks to manage potable (drinking) and recycled (landscaping/flushing) water lines separately for every plot." },
         { title: "Sewerage System:", description: "Designing and executing the underground gravity-flow networks for the efficient collection and transport of domestic waste." },
@@ -639,7 +743,7 @@ export const projectsData = [
       ]
     },
     {
-      sectionTitle: "3. Civil Engineering Works",
+      sectionTitle: "3. Plumbing & Civil Engineering Works",
       items: [
         { title: "Water Supply:", description: "We execute the Installation of high-pressure, segregated pipe networks to manage potable (drinking) and recycled (landscaping/flushing) water lines separately for every plot." },
         { title: "Sewerage System:", description: "Designing and executing the underground gravity-flow networks for the efficient collection and transport of domestic waste." },

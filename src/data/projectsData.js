@@ -5,7 +5,7 @@ export const projectsData = [
 {
   id: 1,
   name: "Century Artizan",
-  location: "Nitte Meenakshi College road Yelahanka, Bengaluru",
+  location: "Nitte Meenakshi College Road, Yelahanka, Bengaluru",
   status: "Completed",
   size: "49 Acre Development, 246 Plots",
   // 1. Short list for the Grid Cards
@@ -381,7 +381,6 @@ export const projectsData = [
     // 1. Short list for the Grid Cards
   details: [
     "Transportation & Surface works",
-    "Site Preparation & Demarcation",
     "Plumbing Systems",
     "Electrical Solutions",
   ],
@@ -392,16 +391,6 @@ export const projectsData = [
       items: [
         { title: "Road Network:", description: "Asphalt & Concrete Paving. We execute all types of internal road works, constructing heavy-duty bituminous (tar) or reinforced concrete roads designed to handle long-term vehicular loads." },
         { title: "Pedestrian Paths:", description: "We specialise in high-strength pavement roads using interlocking blocks, ideal for aesthetic appeal, better water percolation, and easy maintenance of underground utilities." },
-        { title: "Entry Gateway/Portals: ", description: "We design and build a grand entrance structure equipped with security cabins and automated barrier systems." }
-      ]
-    },
-    {
-      sectionTitle: "2. Site Preparation & Demarcation",
-      items: [
-        { title: "Surveying:", description: "Boundary Mapping we use high-tech tools to mark the exact borders of the land so everything is legally correct and perfectly planned." },
-        { title: "Boundary Wall:", description: "Constructing secure, durable compound walls to define and protect the entire development." },
-        { title: "Land Grading:", description: "Executing large-scale earthworks and soil stabilization to create a perfectly build-ready foundation." },
-        { title: "Plot Marking:", description: "We execute physical marking of individual plot dimensions and numbering according to the approved layout." }
       ]
     },
     {
@@ -572,7 +561,6 @@ export const projectsData = [
       items: [
         { title: "Road Network:", description: "Asphalt & Concrete Paving. We execute all types of internal road works, constructing heavy-duty bituminous (tar) or reinforced concrete roads designed to handle long-term vehicular loads." },
         { title: "Pedestrian Paths:", description: "We specialise in high-strength pavement roads using interlocking blocks, ideal for aesthetic appeal, better water percolation, and easy maintenance of underground utilities." },
-        { title: "Entry Gateway/Portals: ", description: "We design and build a grand entrance structure equipped with security cabins and automated barrier systems." }
       ]
     },
     {
@@ -590,7 +578,6 @@ export const projectsData = [
         { title: "Water Supply:", description: "We execute the Installation of high-pressure, segregated pipe networks to manage potable (drinking) and recycled (landscaping/flushing) water lines separately for every plot." },
         { title: "Sewerage System:", description: "Designing and executing the underground gravity-flow networks for the efficient collection and transport of domestic waste." },
         { title: "Storm Water Drains:", description: "Engineering specialized RCC or masonry drainage channels to prevent water logging during heavy rains." },
-        { title: "STP:", description: "Integrating advanced Sewage Treatment Plants to recycle water for landscaping and sustainable use." }
       ]
     },
     {
@@ -608,7 +595,7 @@ export const projectsData = [
   {
     id: 10,
     name: "MAHE - Manipal Academy of Higher Education",
-    location: "Govindapura, Yelahanka, Bengaluru",
+    location: "Nitte Meenaskhi College Road, Yelahanka, Bengaluru",
     status: "Completed",
     size: "80 Acre Development",
     // 1. Short list for the Grid Cards
@@ -623,16 +610,6 @@ export const projectsData = [
       items: [
         { title: "Road Network:", description: "Asphalt & Concrete Paving. We execute all types of internal road works, constructing heavy-duty bituminous (tar) or reinforced concrete roads designed to handle long-term vehicular loads." },
         { title: "Pedestrian Paths:", description: "We specialise in high-strength pavement roads using interlocking blocks, ideal for aesthetic appeal, better water percolation, and easy maintenance of underground utilities." },
-        { title: "Entry Gateway/Portals: ", description: "We design and build a grand entrance structure equipped with security cabins and automated barrier systems." }
-      ]
-    },
-    {
-      sectionTitle: "2. Site Preparation & Demarcation",
-      items: [
-        { title: "Surveying:", description: "Boundary Mapping we use high-tech tools to mark the exact borders of the land so everything is legally correct and perfectly planned." },
-        { title: "Boundary Wall:", description: "Constructing secure, durable compound walls to define and protect the entire development." },
-        { title: "Land Grading:", description: "Executing large-scale earthworks and soil stabilization to create a perfectly build-ready foundation." },
-        { title: "Plot Marking:", description: "We execute physical marking of individual plot dimensions and numbering according to the approved layout." }
       ]
     },
     {
@@ -641,15 +618,6 @@ export const projectsData = [
         { title: "Water Supply:", description: "We execute the Installation of high-pressure, segregated pipe networks to manage potable (drinking) and recycled (landscaping/flushing) water lines separately for every plot." },
         { title: "Sewerage System:", description: "Designing and executing the underground gravity-flow networks for the efficient collection and transport of domestic waste." },
         { title: "Storm Water Drains:", description: "Engineering specialized RCC or masonry drainage channels to prevent water logging during heavy rains." },
-        { title: "STP:", description: "Integrating advanced Sewage Treatment Plants to recycle water for landscaping and sustainable use." }
-      ]
-    },
-    {
-      sectionTitle: "4. Electrical Solutions",
-      items: [
-        { title: "Underground Cabling:", description: "We Lay High Tension & Low Tension power cables in secure trenches for a clean, hazard-free aesthetic." },
-        { title: "Power Distribution:", description: "We strategise and install Transformers and Feeder Pillar Boxes to ensure stable, site-wide electricity." },
-        { title: "Street Lighting:", description: " We implement energy-efficient LED lighting systems with automated timers for safety and visibility." }
       ]
     },
   ],
@@ -695,7 +663,8 @@ export const projectsData = [
         { title: "Water Supply:", description: "We execute the Installation of high-pressure, segregated pipe networks to manage potable (drinking) and recycled (landscaping/flushing) water lines separately for every plot." },
         { title: "Sewerage System:", description: "Designing and executing the underground gravity-flow networks for the efficient collection and transport of domestic waste." },
         { title: "Storm Water Drains:", description: "Engineering specialized RCC or masonry drainage channels to prevent water logging during heavy rains." },
-        { title: "STP:", description: "Integrating advanced Sewage Treatment Plants to recycle water for landscaping and sustainable use." }
+        { title: "STP:", description: "Integrating advanced Sewage Treatment Plants to recycle water for landscaping and sustainable use." },
+         { title: "OHT:", description: "Comprehensive planning and execution of elevated storage reservoirs (Overhead Tanks) designed to meet the specific hydraulic demands of the layout." }
       ]
     },
     {
